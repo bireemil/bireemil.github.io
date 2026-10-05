@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rm -rf _talks _teaching _portfolio)",
+      "Bash(rm -f _pages/talks.html _pages/teaching.html _pages/portfolio.html _pages/talkmap.html)",
+      "Bash(rm -f _layouts/talk.html _includes/archive-single-talk.html _includes/archive-single-talk-cv.html)",
+      "Bash(rm -f talkmap.ipynb talkmap.py)",
+      "Bash(rm -rf talkmap)",
+      "Bash(head -1 markdown_generator/publications.tsv)",
+      "Bash(mv /tmp/pub_header.tsv markdown_generator/publications.tsv)",
+      "Bash(ruby -v)",
+      "Bash(echo \"ruby: $\\(ruby -v 2>/dev/null\\)\")",
+      "Bash(colima status *)",
+      "Bash(docker info *)",
+      "Bash(gh repo *)",
+      "Bash(gh api *)"
+    ]
+  },
+  "skipWebFetchPreflight": true
+}
